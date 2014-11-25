@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+            <style>
+                .container-canvas {
+                    /* This could be done in one single declaration. See the extended sample. */
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 400px;
+                }
+                .centered {
+                    margin: 0 auto !important;
+                    float: none !important;
+                }
+            </style>
+            <script src="vendor/jquery.min.js" type="text/javascript"></script>
+            <script src="vendor/tween-min.js" type="text/javascript"></script>
+            <script src="vendor/steelseries-min.js" type="text/javascript"></script>
+            <script src="vendor/temperature.js" type="text/javascript"></script>
+            <title>Temperatura</title>
+    </head>
+    <body onload="init();">
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="text-center">Arduino IoT Demo</h1>
+            </div>
+
+            <div class="row">
+                <div class="container-canvas">
+                    <canvas id=gaugeCanvas width=200 height=200>No canvas in your browser...sorry...</canvas>
+                </div>
+            </div>
+            <div>
+                <div class="col-md-3 centered">&nbsp;</div>
+            </div>
+            <div>
+                <div class="col-md-3 centered">
+                    <button name="light" class="btn btn-primary btn-lg btn-block" onclick="chat.sendMessage();">Luz</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
